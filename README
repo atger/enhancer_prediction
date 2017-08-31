@@ -1,0 +1,78 @@
+
+/****** README **********/
+
+five files included in archive named : posSet.fa, negSet.fa, random_walk.csv, dataset.csv, dataset_1.csv
+
+The sequence data related to enhancer downloaded 
+from ucsc table browser
+
+posSet.fa	// sequence related to human developmental enhancer
+negSet.fa	// sequence generated with similar gc content
+
+/********************************************************
+Both positive set and negative set file is combined.
+-- first 1798 entries belong to posSet.fa
+-- last 1798 entries belong to negSet.fa
+*********************************************************/
+
+random_walk.csv		// walk genrated using purine-pyrimidine model
+
+Features are calculated using DNA random walk generated from purine-pyrimidine model
+
+dataset.csv	// 11 features
+
+Attributes :
+1) min : minimum value in DNA random walk (drw)
+2) max : maximum value in drw
+3) median : median in drw
+4) skew : skewness in drw
+5) kurt : kurtosis
+6) sd : standard deviation
+7) var : variance
+8) dfa : deterrent functional analysis
+9) cor : correlation
+10) hurst : hurst component
+11) entropy : sample entropy
+
+dataset_1.csv	// 39 features
+
+Attributes :
+1) min : minimum value
+2) max : maximum value
+3) median : median value
+4) skew : skewness
+5) kurt : kurtosis
+6) sd : standard deviation
+7) var : variance
+8) dfa : deterrent functional analysis
+9) cor : correlation
+10) hurst : hurst component
+11) entropy : sample entropy
+12) asoc : absolute sum of changes
+13) adf : augmented dickey_fuller
+14) ac : auto correlation with lag 100
+15) be : binned entropy with max bin 100
+16) cam : count above mean
+17) cbm : count below mean
+18) flm : first location of maximum 
+19) flmn : first location of minimum
+20) llm : last location of maximum
+21) llmn : last location of minimum
+22) lsam : longest strike above mean
+23) lsbm : longest strike below mean
+24) mlfp : max langevin fixed point
+25) mac : mean absolute change
+26) ma : mean autocorrelation
+27) mc : mean change
+28) msdc : mean second derivative central
+29) prdad :  percentage of recurring data points to all data points
+30) prvav : percentage of recurring value to all values
+31) rvntsl : ratio value number to timeseries length
+32) srdp : sum of reoccuring data points
+33) srv : sum of reoccuring values
+34) vltsd :
+35) ac_150 : autocorrelation with lag 150
+36) ac_200 : autocorrelation with lag 200
+37) ac_250 : autocorrelation with lag 250
+38) ac_300 : autocorrelation with lag 300
+39) lyap_r : lyapunov exponent

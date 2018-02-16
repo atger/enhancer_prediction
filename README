@@ -76,3 +76,6 @@ Attributes :
 37) ac_250 : autocorrelation with lag 250
 38) ac_300 : autocorrelation with lag 300
 39) lyap_r : lyapunov exponent
+
+Sequence feature are calculated based on k-mer frequencies
+featureDataset.csv  // combination of 2 to 6 k-mer in column and frequency of each sequence in rows

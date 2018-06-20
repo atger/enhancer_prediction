@@ -1,4 +1,5 @@
 import re
+import sys
 import nolds
 import numpy as np
 import pandas as pd
@@ -43,3 +44,6 @@ def load_feature(s):
     inpv = pd.DataFrame([sd,dfa,hurst,sampen,ac,rvntsl,ac_200,ac_300,lyapr])
     return inpv.transpose()
 
+s = read_seq(sys.argv[1])
+df = load_feature(s)
+df.to_csv("datafile.csv")
